@@ -13,4 +13,4 @@ redirect_from:
 
 Additionally, I am interested in how DNNs help model aspects of human cognition and the limits of such modelling. I am also interested in the issues of generalisability in such networks.
 
-I have [taught](/teaching/) courses in ethics of tech and intro to philosophy. You will find the syllabi for the courses [here](/teaching/).
+I have [taught](/teaching/) courses in ethics of tech and intro to philosophy. You will find the syllabi for the courses [here](/teaching).
