@@ -1,0 +1,60 @@
+/* ==========================================================================
+   MINIMALIST THEME - Dark Mode
+   Clean, minimalist design inspired by PaperMod Hugo theme
+   ========================================================================== */
+
+/* Color codes used for the theme */
+$primary-color              : rgb(218, 218, 219);  // Light text for dark mode
+$secondary-color            : rgb(155, 156, 157);  // Gray for secondary text
+$tertiary-color             : rgb(65, 66, 68);     // Dark gray for backgrounds
+$gray-color                 : rgb(165, 165, 165);  // Medium gray
+
+$background                 : rgb(29, 30, 32);     // Dark background
+$background-light           : rgb(46, 46, 51);     // Slightly lighter
+$background-code            : rgb(55, 56, 62);     // Code background
+$border-color               : rgb(51, 51, 51);     // Dark border
+
+$text                       : rgb(218, 218, 219);  // Light text
+$text-light                 : rgb(155, 156, 157);  // Gray text
+$link                       : rgb(218, 218, 219);  // Light links
+$link-hover                 : rgb(155, 156, 157);  // Gray on hover
+$link-visited               : rgb(155, 156, 157);  // Gray for visited
+
+$footer                     : rgb(29, 30, 32);     // Dark footer
+
+/* Color codes used for the site */
+$danger-color               : #e74c3c;
+$info-color                 : #3498db;
+$notice-color               : rgb(155, 156, 157);
+$success-color              : #6fc276;
+$warning-color              : #f39c12;
+
+/* Other basic settings for the template */
+$border-radius              : 8px;
+$box-shadow                 : none;  // Minimal shadows
+$global-transition          : all 0.2s ease-in-out;
+$masthead-height            : 44px;
+$navicon-width              : 28px;
+$navicon-height             : 4px;
+$sidebar-link-max-width     : 250px;
+$sidebar-screen-min-width   : 1024px;
+
+/* Minimalist dark theme for the site */
+html[data-theme="dark"] {
+    --global-base-color                 : #{$background};
+    --global-bg-color                   : #{$background};
+    --global-footer-bg-color            : #{$footer};
+    --global-border-color               : #{$border-color};
+    --global-dark-border-color          : #{$background-light};
+    --global-code-background-color      : #{$background-code};
+    --global-code-text-color            : #{$text-light};
+    --global-fig-caption-color          : #{$text-light};
+    --global-link-color                 : #{$link};
+    --global-link-color-hover           : #{$link-hover};
+    --global-link-color-visited         : #{$link-visited};
+    --global-masthead-link-color        : #{$text};
+    --global-masthead-link-color-hover  : #{$link-hover};
+    --global-text-color                 : #{$text};
+    --global-text-color-light           : #{$text-light};
+    --global-thead-color                : #{$background-light};
+}

@@ -1,0 +1,60 @@
+/* ==========================================================================
+   MINIMALIST THEME - Light Mode
+   Clean, minimalist design inspired by PaperMod Hugo theme
+   ========================================================================== */
+
+/* Color codes used for the theme - matching Hugo template */
+$primary-color              : rgb(30, 30, 30);     // Near black for text
+$secondary-color            : rgb(108, 108, 108);  // Gray for secondary text
+$tertiary-color             : rgb(214, 214, 214);  // Light gray for backgrounds
+$gray-color                 : rgb(165, 165, 165);  // Medium gray
+
+$background                 : rgb(255, 255, 255);  // Pure white
+$background-light           : rgb(255, 255, 255);  // White
+$background-code            : rgb(245, 245, 245);  // Very light gray for code
+$border-color               : rgb(238, 238, 238);  // Very light border
+
+$text                       : rgb(30, 30, 30);     // Near black
+$text-light                 : rgb(108, 108, 108);  // Gray
+$link                       : rgb(30, 30, 30);     // Black links
+$link-hover                 : rgb(108, 108, 108);  // Gray on hover
+$link-visited               : rgb(108, 108, 108);  // Gray for visited
+
+$footer                     : rgb(255, 255, 255);  // White footer
+
+/* Color codes used for the site */
+$danger-color               : #ee5f5b;
+$info-color                 : #2f7f93;
+$notice-color               : rgb(108, 108, 108);
+$success-color              : #62c462;
+$warning-color              : #f89406;
+
+/* Other basic settings for the template */
+$border-radius              : 8px;
+$box-shadow                 : none;  // Minimal shadows
+$global-transition          : all 0.2s ease-in-out;
+$masthead-height            : 44px;  // Matching Hugo template
+$navicon-width              : 28px;
+$navicon-height             : 4px;
+$sidebar-link-max-width     : 250px;
+$sidebar-screen-min-width   : 1024px;
+
+/* Minimalist light theme for the site */
+:root {
+    --global-base-color                 : #{$background};
+    --global-bg-color                   : #{$background};
+    --global-footer-bg-color            : #{$footer};
+    --global-border-color               : #{$border-color};
+    --global-dark-border-color          : #{$tertiary-color};
+    --global-code-background-color      : #{$background-code};
+    --global-code-text-color            : #{$primary-color};
+    --global-fig-caption-color          : #{$secondary-color};
+    --global-link-color                 : #{$link};
+    --global-link-color-hover           : #{$link-hover};
+    --global-link-color-visited         : #{$link-visited};
+    --global-masthead-link-color        : #{$text};
+    --global-masthead-link-color-hover  : #{$link-hover};
+    --global-text-color                 : #{$text};
+    --global-text-color-light           : #{$text-light};
+    --global-thead-color                : #{$background-code};
+}
