@@ -1,54 +1,54 @@
 /* ==========================================================================
-   SCHOLAR THEME - Light Mode
-   A warm, intellectual color scheme for academic philosophy website
+   MINIMALIST THEME - Light Mode
+   Clean, minimalist design inspired by PaperMod Hugo theme
    ========================================================================== */
 
-/* Color codes used for the theme */
-$primary-color              : #2c5f7d;  // Deep blue-teal (intellectual, calm)
-$secondary-color            : #c17753;  // Warm terracotta (approachable, warm)
-$accent-color               : #3a8fa5;  // Lighter teal (highlights)
+/* Color codes used for the theme - matching Hugo template */
+$primary-color              : rgb(30, 30, 30);     // Near black for text
+$secondary-color            : rgb(108, 108, 108);  // Gray for secondary text
+$tertiary-color             : rgb(214, 214, 214);  // Light gray for backgrounds
+$gray-color                 : rgb(165, 165, 165);  // Medium gray
 
-$dark-primary-color         : mix(#000, $primary-color, 30%);
-$darker-primary-color       : mix(#000, $primary-color, 50%);
-$light-primary-color        : mix(#fff, $primary-color, 30%);
+$background                 : rgb(255, 255, 255);  // Pure white
+$background-light           : rgb(255, 255, 255);  // White
+$background-code            : rgb(245, 245, 245);  // Very light gray for code
+$border-color               : rgb(238, 238, 238);  // Very light border
 
-$background                 : #faf8f5;  // Warm off-white (like aged paper)
-$background-light           : #ffffff;
-$background-accent          : #f2ede6;  // Slightly darker warm tone
-$text                       : #2a2a2a;  // Soft black for readability
-$text-light                 : #5a5a5a;  // Medium gray for secondary text
-$link                       : $primary-color;
-$link-hover                 : $secondary-color;
-$link-visited               : mix($primary-color, $secondary-color, 60%);
-$footer                     : #3d4f5d;  // Muted slate
+$text                       : rgb(30, 30, 30);     // Near black
+$text-light                 : rgb(108, 108, 108);  // Gray
+$link                       : rgb(30, 30, 30);     // Black links
+$link-hover                 : rgb(108, 108, 108);  // Gray on hover
+$link-visited               : rgb(108, 108, 108);  // Gray for visited
+
+$footer                     : rgb(255, 255, 255);  // White footer
 
 /* Color codes used for the site */
-$danger-color               : #d9534f;
-$info-color                 : $accent-color;
-$notice-color               : #8b7d6b;
-$success-color              : #5cb85c;
-$warning-color              : #f0ad4e;
+$danger-color               : #ee5f5b;
+$info-color                 : #2f7f93;
+$notice-color               : rgb(108, 108, 108);
+$success-color              : #62c462;
+$warning-color              : #f89406;
 
 /* Other basic settings for the template */
-$border-radius              : 6px;
-$box-shadow                 : 0 2px 4px rgba(0, 0, 0, 0.08);
-$global-transition          : all 0.3s ease-in-out;
-$masthead-height            : 70px;
+$border-radius              : 8px;
+$box-shadow                 : none;  // Minimal shadows
+$global-transition          : all 0.2s ease-in-out;
+$masthead-height            : 44px;  // Matching Hugo template
 $navicon-width              : 28px;
 $navicon-height             : 4px;
 $sidebar-link-max-width     : 250px;
 $sidebar-screen-min-width   : 1024px;
 
-/* Scholar light theme for the site */
+/* Minimalist light theme for the site */
 :root {
     --global-base-color                 : #{$background};
     --global-bg-color                   : #{$background};
     --global-footer-bg-color            : #{$footer};
-    --global-border-color               : #{$background-accent};
-    --global-dark-border-color          : #d4cec4;
-    --global-code-background-color      : #{$background-accent};
-    --global-code-text-color            : #{$darker-primary-color};
-    --global-fig-caption-color          : #{$text-light};
+    --global-border-color               : #{$border-color};
+    --global-dark-border-color          : #{$tertiary-color};
+    --global-code-background-color      : #{$background-code};
+    --global-code-text-color            : #{$primary-color};
+    --global-fig-caption-color          : #{$secondary-color};
     --global-link-color                 : #{$link};
     --global-link-color-hover           : #{$link-hover};
     --global-link-color-visited         : #{$link-visited};
@@ -56,5 +56,5 @@ $sidebar-screen-min-width   : 1024px;
     --global-masthead-link-color-hover  : #{$link-hover};
     --global-text-color                 : #{$text};
     --global-text-color-light           : #{$text-light};
-    --global-thead-color                : #{$background-accent};
+    --global-thead-color                : #{$background-code};
 }
