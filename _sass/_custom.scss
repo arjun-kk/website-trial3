@@ -1,0 +1,227 @@
+/* ==========================================================================
+   CUSTOM ENHANCEMENTS
+   Additional styling for unique look and feel
+   ========================================================================== */
+
+/* Smooth scrolling behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Enhanced masthead with subtle shadow */
+.masthead {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+/* Improved link hover effects */
+a {
+    position: relative;
+    transition: color 0.3s ease-in-out;
+}
+
+.page__content a:not(.btn):hover {
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
+}
+
+/* Enhanced sidebar styling */
+.sidebar {
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+    
+    .author__avatar {
+        img {
+            border-radius: 50%;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            
+            &:hover {
+                transform: scale(1.05);
+                box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+            }
+        }
+    }
+    
+    .author__urls {
+        a {
+            transition: all 0.3s ease-in-out;
+            border-radius: 4px;
+            padding: 2px 8px;
+            
+            &:hover {
+                background-color: var(--global-border-color);
+                transform: translateX(4px);
+            }
+        }
+    }
+}
+
+/* Enhanced buttons */
+.btn {
+    border-radius: 6px;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    
+    &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    }
+    
+    &:active {
+        transform: translateY(0);
+    }
+}
+
+/* Enhanced archive items */
+.archive__item {
+    transition: all 0.3s ease-in-out;
+    border-radius: 8px;
+    padding: 1em;
+    
+    &:hover {
+        background-color: var(--global-border-color);
+        transform: translateX(8px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+}
+
+/* Improved page title styling */
+.page__title {
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 0.5em;
+    position: relative;
+    padding-bottom: 0.5em;
+    
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 60px;
+        height: 3px;
+        background: linear-gradient(90deg, var(--global-link-color), var(--global-link-color-hover));
+        border-radius: 2px;
+    }
+}
+
+/* Enhanced images in content */
+.page__content {
+    img {
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        
+        &:hover {
+            transform: scale(1.02);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+        }
+    }
+}
+
+/* Improved footer styling */
+.page__footer {
+    background: linear-gradient(180deg, var(--global-footer-bg-color), mix(#000, var(--global-footer-bg-color), 10%));
+    padding: 2em 0;
+    
+    footer {
+        padding: 1em 0;
+    }
+}
+
+/* Enhanced navigation items */
+.greedy-nav {
+    .visible-links {
+        a {
+            font-weight: 500;
+            transition: all 0.3s ease-in-out;
+            position: relative;
+            
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 0;
+                height: 2px;
+                background-color: var(--global-link-color-hover);
+                transition: width 0.3s ease-in-out;
+            }
+            
+            &:hover::after {
+                width: 80%;
+            }
+        }
+    }
+}
+
+/* Enhanced code blocks */
+code {
+    border-radius: 4px;
+    padding: 0.2em 0.4em;
+    font-size: 0.9em;
+}
+
+pre {
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Subtle animations for page load */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.page__content > *:not(:first-child) {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+/* Enhanced list styling */
+.page__content {
+    ul, ol {
+        li {
+            margin-bottom: 0.5em;
+            position: relative;
+            padding-left: 0.5em;
+        }
+    }
+}
+
+/* Improved table styling */
+table {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+/* Theme toggle button enhancement */
+#theme-toggle {
+    a {
+        transition: all 0.3s ease-in-out;
+        
+        &:hover {
+            transform: rotate(15deg) scale(1.1);
+        }
+    }
+}
+
+/* Responsive enhancements */
+@media (max-width: 768px) {
+    .archive__item:hover {
+        transform: none;
+    }
+    
+    .page__content img:hover {
+        transform: none;
+    }
+}

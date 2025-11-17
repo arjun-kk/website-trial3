@@ -1,0 +1,60 @@
+/* ==========================================================================
+   SCHOLAR THEME - Light Mode
+   A warm, intellectual color scheme for academic philosophy website
+   ========================================================================== */
+
+/* Color codes used for the theme */
+$primary-color              : #2c5f7d;  // Deep blue-teal (intellectual, calm)
+$secondary-color            : #c17753;  // Warm terracotta (approachable, warm)
+$accent-color               : #3a8fa5;  // Lighter teal (highlights)
+
+$dark-primary-color         : mix(#000, $primary-color, 30%);
+$darker-primary-color       : mix(#000, $primary-color, 50%);
+$light-primary-color        : mix(#fff, $primary-color, 30%);
+
+$background                 : #faf8f5;  // Warm off-white (like aged paper)
+$background-light           : #ffffff;
+$background-accent          : #f2ede6;  // Slightly darker warm tone
+$text                       : #2a2a2a;  // Soft black for readability
+$text-light                 : #5a5a5a;  // Medium gray for secondary text
+$link                       : $primary-color;
+$link-hover                 : $secondary-color;
+$link-visited               : mix($primary-color, $secondary-color, 60%);
+$footer                     : #3d4f5d;  // Muted slate
+
+/* Color codes used for the site */
+$danger-color               : #d9534f;
+$info-color                 : $accent-color;
+$notice-color               : #8b7d6b;
+$success-color              : #5cb85c;
+$warning-color              : #f0ad4e;
+
+/* Other basic settings for the template */
+$border-radius              : 6px;
+$box-shadow                 : 0 2px 4px rgba(0, 0, 0, 0.08);
+$global-transition          : all 0.3s ease-in-out;
+$masthead-height            : 70px;
+$navicon-width              : 28px;
+$navicon-height             : 4px;
+$sidebar-link-max-width     : 250px;
+$sidebar-screen-min-width   : 1024px;
+
+/* Scholar light theme for the site */
+:root {
+    --global-base-color                 : #{$background};
+    --global-bg-color                   : #{$background};
+    --global-footer-bg-color            : #{$footer};
+    --global-border-color               : #{$background-accent};
+    --global-dark-border-color          : #d4cec4;
+    --global-code-background-color      : #{$background-accent};
+    --global-code-text-color            : #{$darker-primary-color};
+    --global-fig-caption-color          : #{$text-light};
+    --global-link-color                 : #{$link};
+    --global-link-color-hover           : #{$link-hover};
+    --global-link-color-visited         : #{$link-visited};
+    --global-masthead-link-color        : #{$text};
+    --global-masthead-link-color-hover  : #{$link-hover};
+    --global-text-color                 : #{$text};
+    --global-text-color-light           : #{$text-light};
+    --global-thead-color                : #{$background-accent};
+}
